@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="30" passed="30" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-15T10:24:45Z" name="All Test Suite" finished-at="2022-02-15T10:25:22Z" duration-ms="36681">
+    <groups>
+    </groups>
+    <test started-at="2022-02-15T10:24:45Z" name="C:/Users/SachinKumar/Documents/Sachin Kumar/Projects/Assignment_SauceDemo" finished-at="2022-02-15T10:25:22Z" duration-ms="36681">
+      <class name="tests.HomeTest">
+        <test-method is-config="true" signature="launch()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:54:57Z" name="launch" finished-at="2022-02-15T15:55:01Z" duration-ms="3260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="loginStd()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:01Z" name="loginStd" finished-at="2022-02-15T15:55:01Z" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStd -->
+        <test-method signature="checkCart1()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:01Z" name="checkCart1" finished-at="2022-02-15T15:55:01Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart1 -->
+        <test-method signature="checkCart2()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:01Z" name="checkCart2" finished-at="2022-02-15T15:55:01Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart2 -->
+        <test-method signature="checkCart3()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:01Z" name="checkCart3" finished-at="2022-02-15T15:55:02Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart3 -->
+        <test-method signature="checkCart4()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:02Z" name="checkCart4" finished-at="2022-02-15T15:55:02Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart4 -->
+        <test-method signature="checkCart5()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:02Z" name="checkCart5" finished-at="2022-02-15T15:55:02Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart5 -->
+        <test-method signature="checkCart6()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:02Z" name="checkCart6" finished-at="2022-02-15T15:55:02Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart6 -->
+        <test-method signature="checkFacebook()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:02Z" name="checkFacebook" finished-at="2022-02-15T15:55:03Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFacebook -->
+        <test-method signature="checkLink1()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:03Z" name="checkLink1" finished-at="2022-02-15T15:55:04Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink1 -->
+        <test-method signature="checkLink2()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:04Z" name="checkLink2" finished-at="2022-02-15T15:55:04Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink2 -->
+        <test-method signature="checkLink3()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:04Z" name="checkLink3" finished-at="2022-02-15T15:55:05Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink3 -->
+        <test-method signature="checkLink4()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:05Z" name="checkLink4" finished-at="2022-02-15T15:55:05Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink4 -->
+        <test-method signature="checkLink5()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:05Z" name="checkLink5" finished-at="2022-02-15T15:55:05Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink5 -->
+        <test-method signature="checkLink6()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:05Z" name="checkLink6" finished-at="2022-02-15T15:55:05Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLink6 -->
+        <test-method signature="checkLinkedIn()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:05Z" name="checkLinkedIn" finished-at="2022-02-15T15:55:07Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="1635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLinkedIn -->
+        <test-method signature="checkPic1()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:07Z" name="checkPic1" finished-at="2022-02-15T15:55:07Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic1 -->
+        <test-method signature="checkPic2()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:07Z" name="checkPic2" finished-at="2022-02-15T15:55:08Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic2 -->
+        <test-method signature="checkPic3()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:08Z" name="checkPic3" finished-at="2022-02-15T15:55:08Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic3 -->
+        <test-method signature="checkPic4()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:08Z" name="checkPic4" finished-at="2022-02-15T15:55:08Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic4 -->
+        <test-method signature="checkPic5()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:08Z" name="checkPic5" finished-at="2022-02-15T15:55:08Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic5 -->
+        <test-method signature="checkPic6()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:08Z" name="checkPic6" finished-at="2022-02-15T15:55:08Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPic6 -->
+        <test-method signature="checkTwitter()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:08Z" name="checkTwitter" finished-at="2022-02-15T15:55:10Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTwitter -->
+        <test-method signature="checkingFilter1()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:10Z" name="checkingFilter1" finished-at="2022-02-15T15:55:21Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="11350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingFilter1 -->
+        <test-method signature="checkingFilter2()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:21Z" name="checkingFilter2" finished-at="2022-02-15T15:55:21Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingFilter2 -->
+        <test-method signature="checkingFilter3()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:21Z" name="checkingFilter3" finished-at="2022-02-15T15:55:21Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingFilter3 -->
+        <test-method signature="checkingFilter4()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:21Z" name="checkingFilter4" finished-at="2022-02-15T15:55:21Z" depends-on-methods="tests.HomeTest.loginStd" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingFilter4 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.HomeTest@473b46c3]" started-at="2022-02-15T15:55:21Z" name="closeBrowser" finished-at="2022-02-15T15:55:22Z" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.HomeTest -->
+      <class name="tests.LoginPage">
+        <test-method is-config="true" signature="launch()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:45Z" name="launch" finished-at="2022-02-15T15:54:50Z" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="loginGlitch()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:50Z" name="loginGlitch" finished-at="2022-02-15T15:54:56Z" duration-ms="5510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginGlitch -->
+        <test-method signature="loginPro()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:56Z" name="loginPro" finished-at="2022-02-15T15:54:56Z" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPro -->
+        <test-method signature="loginLock()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:56Z" name="loginLock" finished-at="2022-02-15T15:54:57Z" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLock -->
+        <test-method signature="loginStd()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:57Z" name="loginStd" finished-at="2022-02-15T15:54:57Z" duration-ms="635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStd -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:54:57Z" name="closeBrowser" finished-at="2022-02-15T15:54:57Z" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeAllBrowser()[pri:0, instance:tests.LoginPage@15d9bc04]" started-at="2022-02-15T15:55:22Z" name="closeAllBrowser" finished-at="2022-02-15T15:55:23Z" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowser -->
+      </class> <!-- tests.LoginPage -->
+    </test> <!-- C:/Users/SachinKumar/Documents/Sachin Kumar/Projects/Assignment_SauceDemo -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
