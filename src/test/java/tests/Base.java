@@ -22,7 +22,7 @@ public class Base {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        pageFactory = new PageObject(driver);
+        pageFactory = new PageObject();
         driver.manage().window().maximize();
         prop = new Properties();
         FileInputStream ip= new FileInputStream(path);

@@ -1,22 +1,15 @@
 package pages;
 
 
-import org.openqa.selenium.WebDriver;
-
 public class PageObject {
-
-
-    WebDriver driver;
-
-    public PageObject(WebDriver driver) {
-        this.driver = driver;
-    }
 
     private LoginPage loginPage;
     private HomePage homePage;
     private FileReader fileReader;
     private CartPage cartPage;
     private CheckOutPage checkOutPage;
+
+
 
     public LoginPage getLoginPage() {
         if(loginPage == null){
@@ -53,4 +46,5 @@ public class PageObject {
         }
         return checkOutPage;
     }
+
 }

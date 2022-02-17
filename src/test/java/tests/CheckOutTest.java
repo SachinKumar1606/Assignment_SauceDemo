@@ -10,9 +10,9 @@ public class CheckOutTest extends Base{
 
     @Test
     public void loginStd(){
-        pageFactory.getLoginPage().setUsername(prop.getProperty("uname1"));
-        pageFactory.getLoginPage().setPassword(prop.getProperty("pass"));
-        pageFactory.getLoginPage().setSubmit();
+//        pageFactory.getLoginPage().setUsername(prop.getProperty("uname1"));
+//        pageFactory.getLoginPage().setPassword(prop.getProperty("pass"));
+//        pageFactory.getLoginPage().setSubmit();
         String exp = prop.getProperty("loginPage");
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act,exp);
