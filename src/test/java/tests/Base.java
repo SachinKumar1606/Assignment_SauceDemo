@@ -7,11 +7,12 @@ import org.testng.annotations.*;
 import pages.PageObject;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class Base {
+public class Base implements Interfaces.Base {
     public static WebDriver driver;
     public static Properties prop;
     public static PageObject pageFactory;

@@ -20,6 +20,9 @@ public class HomePage implements Interfaces.HomePage {
     //locators of filters
 
     @FindBy(className = "inventory_item_name")
+    private WebElement item;
+
+    @FindBy(className = "inventory_item_name")
     private WebElement pName;
     @FindBy(className = "product_sort_container")
     private WebElement filter;
@@ -34,7 +37,9 @@ public class HomePage implements Interfaces.HomePage {
 
     //locators of links text()
 
-    private String productLink = "%s";
+    private String productLink = "Sauce Labs %s";
+
+    private String image = "item_%s_img_link";
 
     //Locators of social media sites
 
@@ -42,7 +47,6 @@ public class HomePage implements Interfaces.HomePage {
 
     //Locators of images of products
 
-    private String image = "%s";
 
 
     //Locators of cart
@@ -64,7 +68,8 @@ public class HomePage implements Interfaces.HomePage {
 
     //Locators add to cartRemove
 
-    private String remove = "%s";
+    private String remove = "remove-sauce-labs-%s";
+    private String addCart = "add-to-cart-sauce-labs-%s";
 
     public HomePage() {
         PageFactory.initElements(driver, this);
@@ -155,42 +160,42 @@ public class HomePage implements Interfaces.HomePage {
     }
 
     public void setBagPack() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Sauce Labs Backpack"))).click();
+        driver.findElement(By.partialLinkText(String.format(productLink, "Backpack"))).click();
         String exp = pageFactory.getFileReader().getData(1, 0, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void setBikeLight() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Sauce Labs Bike Light"))).click();
+        driver.findElement(By.partialLinkText(String.format(productLink, "Bike Light"))).click();
         String exp = pageFactory.getFileReader().getData(1, 1, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void settShirt() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Sauce Labs Bolt T-Shirt"))).click();
+        driver.findElement(By.partialLinkText(String.format(productLink, "Bolt T-Shirt"))).click();
         String exp = pageFactory.getFileReader().getData(1, 2, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void setJacket() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Sauce Labs Fleece Jacket"))).click();
+        driver.findElement(By.partialLinkText(String.format(productLink, "Fleece Jacket"))).click();
         String exp = pageFactory.getFileReader().getData(1, 3, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void settRed() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Test.allTheThings() T-Shirt (Red)"))).click();
+        driver.findElement(By.partialLinkText("Test.allTheThings() T-Shirt (Red)")).click();
         String exp = pageFactory.getFileReader().getData(1, 4, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);;
     }
 
     public void setOnesie() {
-        driver.findElement(By.partialLinkText(String.format(productLink, "Sauce Labs Onesie"))).click();
+        driver.findElement(By.partialLinkText(String.format(productLink, "Onesie"))).click();
         String exp = pageFactory.getFileReader().getData(1, 5, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
@@ -205,42 +210,42 @@ public class HomePage implements Interfaces.HomePage {
 
     //Picture check function
     public void setBagPackPic() {
-        driver.findElement(By.id(String.format(productLink, "item_4_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "4"))).click();
         String exp = pageFactory.getFileReader().getData(1, 0, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void setBikeLightPic() {
-        driver.findElement(By.id(String.format(productLink, "item_0_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "0"))).click();
         String exp = pageFactory.getFileReader().getData(1, 1, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void settShirtPic() {
-        driver.findElement(By.id(String.format(productLink, "item_1_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "1"))).click();
         String exp = pageFactory.getFileReader().getData(1, 2, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void setJacketPic() {
-        driver.findElement(By.id(String.format(productLink, "item_5_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "5"))).click();
         String exp = pageFactory.getFileReader().getData(1, 3, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void settRedPic() {
-        driver.findElement(By.id(String.format(productLink, "item_3_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "3"))).click();
         String exp = pageFactory.getFileReader().getData(1, 4, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
     }
 
     public void setOnesiePic() {
-        driver.findElement(By.id(String.format(productLink, "item_2_img_link"))).click();
+        driver.findElement(By.id(String.format(image, "2"))).click();
         String exp = pageFactory.getFileReader().getData(1, 5, 1);
         String act = driver.getCurrentUrl();
         Assert.assertEquals(act, exp);
@@ -248,43 +253,43 @@ public class HomePage implements Interfaces.HomePage {
 
     //Add to cart function
     public void setBagPackCart() {
-        driver.findElement(By.id(String.format(remove, "add-to-cart-sauce-labs-backpack"))).click();
-        String act = driver.findElement(By.id(String.format(remove, "remove-sauce-labs-backpack"))).getText();
+        driver.findElement(By.id(String.format(addCart, "backpack"))).click();
+        String act = driver.findElement(By.id(String.format(remove, "backpack"))).getText();
         String exp = "REMOVE";
         Assert.assertEquals(act, exp);
     }
 
     public void setBikeLightCart() {
-        driver.findElement(By.id(String.format(productLink, "add-to-cart-sauce-labs-bike-light"))).click();
-        String act = driver.findElement(By.id(String.format(productLink, "remove-sauce-labs-bike-light"))).getText();
+        driver.findElement(By.id(String.format(addCart, "bike-light"))).click();
+        String act = driver.findElement(By.id(String.format(remove, "bike-light"))).getText();
         String exp = prop.getProperty("expRemove");
         Assert.assertEquals(act, exp);
     }
 
     public void settShirtCart() {
-        driver.findElement(By.id(String.format(productLink, "add-to-cart-sauce-labs-bolt-t-shirt"))).click();
-        String act = driver.findElement(By.id(String.format(productLink, "remove-sauce-labs-bolt-t-shirt"))).getText();
+        driver.findElement(By.id(String.format(addCart, "bolt-t-shirt"))).click();
+        String act = driver.findElement(By.id(String.format(remove, "bolt-t-shirt"))).getText();
         String exp = prop.getProperty("expRemove");
         Assert.assertEquals(act, exp);
     }
 
     public void setJacketCart() {
-        driver.findElement(By.id(String.format(productLink, "add-to-cart-sauce-labs-fleece-jacket"))).click();
-        String act = driver.findElement(By.id(String.format(productLink, "remove-sauce-labs-fleece-jacket"))).getText();
+        driver.findElement(By.id(String.format(addCart, "fleece-jacket"))).click();
+        String act = driver.findElement(By.id(String.format(remove, "fleece-jacket"))).getText();
         String exp = prop.getProperty("expRemove");
         Assert.assertEquals(act, exp);
     }
 
     public void settRedCart() {
-        driver.findElement(By.id(String.format(productLink, "add-to-cart-test.allthethings()-t-shirt-(red)"))).click();
-        String act = driver.findElement(By.id(String.format(productLink, "remove-test.allthethings()-t-shirt-(red)"))).getText();
+        driver.findElement(By.id("add-to-cart-test.allthethings()-t-shirt-(red)")).click();
+        String act = driver.findElement(By.id("remove-test.allthethings()-t-shirt-(red)")).getText();
         String exp = prop.getProperty("expRemove");
         Assert.assertEquals(act, exp);
     }
 
     public void setOnesieCart() {
-        driver.findElement(By.id(String.format(productLink, "add-to-cart-sauce-labs-onesie"))).click();
-        String act = driver.findElement(By.id(String.format(productLink, "remove-sauce-labs-onesie"))).getText();
+        driver.findElement(By.id(String.format(addCart, "onesie"))).click();
+        String act = driver.findElement(By.id(String.format(remove, "onesie"))).getText();
         String exp = prop.getProperty("expRemove");
         Assert.assertEquals(act, exp);
     }

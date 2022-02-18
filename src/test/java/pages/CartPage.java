@@ -11,7 +11,7 @@ import java.util.Set;
 import static tests.Base.driver;
 import static tests.Base.prop;
 
-public class CartPage {
+public class CartPage implements Interfaces.CartPage {
 
     //Locators of menu button and there links
     @FindBy(id = "react-burger-menu-btn")

@@ -10,12 +10,7 @@ public class CheckOutTest extends Base{
 
     @Test
     public void loginStd(){
-//        pageFactory.getLoginPage().setUsername(prop.getProperty("uname1"));
-//        pageFactory.getLoginPage().setPassword(prop.getProperty("pass"));
-//        pageFactory.getLoginPage().setSubmit();
-        String exp = prop.getProperty("loginPage");
-        String act = driver.getCurrentUrl();
-        Assert.assertEquals(act,exp);
+        pageFactory.getLoginPage().login(prop.getProperty("uname1"), prop.getProperty("pass"));
     }
 
     @Test(dependsOnMethods = "loginStd")
@@ -24,9 +19,7 @@ public class CheckOutTest extends Base{
         pageFactory.getHomePage().setCart();
         pageFactory.getHomePage().setCart();
         pageFactory.getCartPage().setCheckout();
-        pageFactory.getCheckOutPage().setfName(prop.getProperty("fname"));
-        pageFactory.getCheckOutPage().setlName(prop.getProperty("lname"));
-        pageFactory.getCheckOutPage().setPostCode(prop.getProperty("pin"));
+        pageFactory.getCheckOutPage().purchase(prop.getProperty("fname"), prop.getProperty("lname"), prop.getProperty("pin"));
         pageFactory.getCheckOutPage().setShop();
         driver.findElement(By.className(prop.getProperty("finish"))).click();
         String act = driver.findElement(By.className(prop.getProperty("lastTittle"))).getText();

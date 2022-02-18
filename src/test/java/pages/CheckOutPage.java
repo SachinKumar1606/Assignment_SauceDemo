@@ -10,7 +10,7 @@ import java.util.Set;
 import static tests.Base.driver;
 import static tests.Base.prop;
 
-public class CheckOutPage {
+public class CheckOutPage implements Interfaces.CheckOutPage {
 
     @FindBy(id="react-burger-menu-btn")
     private WebElement menu;
@@ -51,24 +51,18 @@ public class CheckOutPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void setfName(String fname){
-        fName.sendKeys(fname);
-    }
-
-    public void setlName(String lname){
-        lName.sendKeys(lname);
-    }
-
-    public void setPostCode(String pin){
-        postCode.sendKeys(pin);
-    }
-
     public void setCancel(){
         cancel.click();
     }
 
     public void setShop() {
         shop.click();
+    }
+
+    public void purchase(String fname, String lname, String pin){
+        fName.sendKeys(fname);
+        lName.sendKeys(lname);
+        postCode.sendKeys(pin);
     }
 
     //Link check if social media accounts.
